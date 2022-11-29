@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2.8rem;
+    position: relative;
+}
+.title::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    background-color: white;
+    bottom: -15px;
+}
+/* Start Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar .navbar-brand img {
+    height: 40px;
+    width: 80px;
+}
+.collapse:not(.show) {
+    display: none;
+}
+.navbar .navbar-nav li a:hover {
+    color: #007bff !important;
+}
+@media(max-width: 991px) {
+    .navbar .navbar-nav li {
+        text-align: right;
+    }
+}
+.navbar .navbar-toggler {
+    border: 1px solid #007bff !important;
+    box-shadow: none !important;
+}
+.navbar .nav-link {
+    color: #555 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+/* End Navbar */
+/* Start Slider */
+.carousel-dark .carousel-caption {
+    color: #fff;
+}
+.carousel h5 {
+    font-size: 1.5rem !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+.carousel h5 {
+    font-size: 1.8rem !important;
+}
+/* End Slider */
+/*  Start Section About Us */
+.about-us {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.about-us .text h4 {
+    margin-bottom: 1rem;
+}
+.about-us .text p {
+    color: #777;
+}
+.about-us .text a {
+    text-decoration: none;
+    color: white;
+    background-color: #0d6efd;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: 0.7s;
+}
+.about-us .text a:hover {
+    background-color: #0a58ca;
+}
+.about-us .progress-section .prog {
+    margin-bottom: 0.95rem;
+}
+.about-us .progress-section .prog span {
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.progress-bar {
+    border-radius: 0.375rem;
+}
+@media(max-width: 991px) {
+    .about-us .progress-section {
+        margin-top: 2rem;
+    }
+}
+@media(max-width: 767px) {
+    .about-us .text h4,
+    .about-us .text p {
+        text-align: center;
+    }
+    .about-us .progress-section .prog span {
+        text-align: center;
+    }
+}
+/*  End Section About Us */
+/* Start Section Services */
+.our-services {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-image: url("../imgs/computer-services.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.our-services .box {
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.7s;
+}
+.our-services .box:hover {
+    background-color: #007bff;
+}
+.our-services .box .icon {
+    margin-bottom: 1rem;
+}
+.our-services .box .icon svg {
+    padding: 0.9rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid white; 
+    font-size: 1.6rem;
+    color: white;
+}
+.our-services .box .info h4 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.our-services .box .info p {
+    color: #ffffff8c;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+/* End Section Services */
+/* Start Section Our Team */
+.our-team {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    background-color: #eee;
+}
+.our-team .title {
+    color: black;
+}
+.our-team .title::before {
+    background-color: #007bff;
+}
+.our-team .card {
+    border: none;
+}
+.our-team .card .img-box img {
+    filter: grayscale(1);
+}
+.our-team .card .img-box:hover img {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.our-team .card .img-box:hover .social {
+    opacity: 1;
+}
+.our-team .card .img-box {
+    position: relative;
+    transition: 0.7s;
+}
+.our-team .card .img-box .social {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+}
+.our-team .card .social svg {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    color: #0d6efd;
+    margin-left: 0.5rem;
+    font-size: 0.1rem;
+    padding: 0.2rem;
+}
+.our-team .card .card-body {
+    text-align: center;
+}
+.our-team .card .card-body h5 {
+    color: #007bff;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.our-team .card .card-body span {
+    color: black;
+    font-size: 0.9rem;
+}
+.our-team .card .card-body p {
+    color: #777;
+    line-height: 1.4;
+}
+/* End Section Our Team */
+ /* Start Contact US */
+ .contact-us {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-image: url("../imgs/contact.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .contact-us .contact {
+    text-align: center;
+ }
+ .contact-us .contact h3 {
+    color: white;
+    letter-spacing: -1px;
+ }
+ .contact-us .contact a {
+    text-decoration: none;
+    color: white;
+    background-color: #0d6efd;
+    padding: 0.5rem 0.9rem;
+    margin-top: 0.5remrem;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    border: none;
+ }
+ /* End Contact Us */
+ /* Start Section Price */
+ .prices {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    background-color: #eee;
+ }
+ .prices .title {
+    color: black;
+ }
+ .prices .title::before {
+    background-color: #007bff;
+ }
+ .prices .price-box {
+    background-color: white;
+    margin-bottom: 1.1rem;
+    border: 1px solid white;
+    transition: 0.7s;
+ }
+ .prices .price-box:hover{
+    box-shadow: 0px 2px 20px 0px #333;
+ }
+ .prices .price-box .price {
+    background-color: #007bff;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+ }
+ .prices .price-box .price h5 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+ }
+ .prices .price-box .price span {
+    color: #ffffff70;
+ }
+ .prices .price-box .price .dolar {
+    font-weight: bold;
+    font-size: 1.3rem;
+ }
+ .prices .price-box .price .month {
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-size: 0.9rem;
+ }
+ .prices .price-box .price-list {
+    background-color: white;
+    margin: 0.8rem 1rem;
+ }
+ .prices .price-box .price-list ul li svg {
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.15rem;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    margin-right: 0.2rem;
+ }
+ .prices .price-box .price-list ul .mark svg {
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.15rem;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+ }
+ .prices .price-box .price-list ul li {
+    margin-bottom: 2rem;
+    color: #777;
+ }
+ .mark,
+  mark {
+    background-color: white;
+    padding: 0.15rem;
+ }
+ .prices .price-box .price-list a {
+    text-decoration: none;
+    color: white;
+    background-color: #0d6efd;
+    padding: 0.5rem 0.9rem;
+    margin-top: 0.5remrem;
+    text-align: center;
+    font-size: 0.95rem;
+    border: none;
+    transition: 0.7s;
+ }
+ .prices .price-box .price-list a:hover {
+    background-color: #0a58ca;
+ }
+ .prices .price-box .price-list .buy {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+ }
+ .prices .price-box .price-list .buy a {
+    padding: 0.8rem 2.3rem;
+    border-radius: 4px;
+ }
+ /* End Section Price */
+ /* Start Testimonials */
+ .testimonials {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+ }
+ .testimonials .title {
+    color: black;
+ }
+ .testimonials .title::before {
+    background-color: #007bff;
+ }
+ .testimonials .describtion {
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+ }
+ .testimonials .profile {
+    background-color: #eee;
+    margin-top: 4rem;
+    transition: 0.7s;
+    width: fit-content;
+    margin: 3.5rem auto;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+ }
+ .testimonials .profile:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2),  0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+ }
+ .testimonials .profile .img img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    border: 6px solid white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .testimonials .profile blockquote {
+    text-align: center;
+    margin-top: 1.9rem;
+    width: 22rem;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .testimonials .profile blockquote::before {
+    content: "’’";
+    position: absolute;
+    color: #0d6efd;
+    font-size: 3rem;
+    left: 0.8rem;
+    top: -0.8rem;
+ }
+ .testimonials .profile blockquote::after {
+    content: "’’";
+    position: absolute;
+    color: #0d6efd;
+    font-size: 3rem;
+    bottom: -2.2rem;
+ }
+ .testimonials .profile .name {
+    text-align: center;
+    margin-top: -3.5rem;
+    color: #0d6efd;
+    font-weight: bold;
+ }
+ .testimonials .profile .name span {
+    color: black;
+    font-weight: normal;
+    font-size: 0.9rem;
+    letter-spacing: -1px;
+ }
+ /* End Testimonials */
+ /* Start Touch  */
+ .touch {
+    background-color: #eee;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+ }
+ .touch .title {
+    color: black;
+ }
+ .touch .title::before {
+    background-color: #007bff;
+ }
+ .touch .text {
+    background-color: white;
+    display: flex;
+    margin-bottom: 1.4rem;
+    padding: 0.56rem 0.75rem;
+ }
+ .touch .text h5 {
+    font-size: 1rem;
+ }
+ .touch .text .icon {
+    margin-left: 0.5rem;
+ }
+ .touch .text .icon svg,
+ .touch .text .icon a svg{
+    color: #0d6efd;
+ } 
+ .touch .text .icon a svg {
+    padding-left: 1rem;
+ } 
+ /* End Touch */
+ /* Start Footer */
+ footer {
+    background-color: black;
+    padding: 0.5rem 0;
+ }
+ footer .foot {
+    text-align: center;
+    color: rgba(255, 255, 255, 50%);
+ }
+ footer .foot svg {
+    color: red;
+ }
+ /* End Footer */
